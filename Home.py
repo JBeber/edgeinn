@@ -31,7 +31,7 @@ def run():
   """
   st.markdown(hide_toolbar_items, unsafe_allow_html=True)
 
-  col1, col2, col3 = st.columns([0.05, 0.9, 0.05])
+  col1, col2, col3 = st.columns([0.01, 0.98, 0.01])
 
   with col2:
     iframe_src="https://calendar.google.com/calendar/embed?wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=ZjA2MTc0MmYzZTMxNjMxMzdjNjNmYzQ3NzUzMWI5MTBkNDFkZGYxMGNjMzFjYmY0MTNjY2VmZTNmNmI0ZGU1MUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23B39DDB"
