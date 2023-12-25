@@ -14,7 +14,7 @@
 
 import streamlit as st
 import streamlit.components.v1 as components
-from streamlit_dimensions import st_dimensions as dim
+# from streamlit_dimensions import st_dimensions as dim
 
 def run():
   st.set_page_config(
@@ -35,9 +35,10 @@ def run():
 
   with col2:
     iframe_src="https://calendar.google.com/calendar/embed?wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=ZjA2MTc0MmYzZTMxNjMxMzdjNjNmYzQ3NzUzMWI5MTBkNDFkZGYxMGNjMzFjYmY0MTNjY2VmZTNmNmI0ZGU1MUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23B39DDB"
-    dim_output = dim(key='col2')
-    width = dim_output["width"]
-    components.iframe(iframe_src, width=width, height= width*0.7, scrolling=True)
+    # dim_output = dim(key='col2')
+    # width = dim_output["width"]
+    # components.iframe(iframe_src, width=width, height= width*0.7, scrolling=True)
+    components.iframe(iframe_src, width=800, height= 600, scrolling=True)
 
 
 if __name__ == "__main__":
