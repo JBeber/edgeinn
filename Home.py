@@ -16,12 +16,21 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 def run():
-    st.set_page_config(
-        page_title="Edge Inn Schedule",
-    )
+  st.set_page_config(
+      page_title="Edge Inn Schedule"
+  )
 
-    iframe_src="https://calendar.google.com/calendar/embed?wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=ZjA2MTc0MmYzZTMxNjMxMzdjNjNmYzQ3NzUzMWI5MTBkNDFkZGYxMGNjMzFjYmY0MTNjY2VmZTNmNmI0ZGU1MUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23B39DDB"
-    components.iframe(iframe_src, width=800, height=600, scrolling=True)
+  # Add custom CSS to hide the GitHub icon
+  hide_github_icon = """
+  <style>
+  #MainMenu {visibility: hidden;}
+  #GithubIcon {visibility: hidden;}
+  </style>
+  """
+  st.markdown(hide_github_icon, unsafe_allow_html=True)
+
+  iframe_src="https://calendar.google.com/calendar/embed?wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=ZjA2MTc0MmYzZTMxNjMxMzdjNjNmYzQ3NzUzMWI5MTBkNDFkZGYxMGNjMzFjYmY0MTNjY2VmZTNmNmI0ZGU1MUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23B39DDB"
+  components.iframe(iframe_src, width=800, height=600, scrolling=True)
 
 
 if __name__ == "__main__":
