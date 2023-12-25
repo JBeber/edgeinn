@@ -19,8 +19,7 @@ import streamlit.components.v1 as components
 def run():
     st.set_page_config(
         page_title="Edge Inn Schedule",
-    )    
-    )    
+    )
 
     iframe_src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=ZjA2MTc0MmYzZTMxNjMxMzdjNjNmYzQ3NzUzMWI5MTBkNDFkZGYxMGNjMzFjYmY0MTNjY2VmZTNmNmI0ZGU1MUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23B39DDB"
     components.iframe(iframe_src, width=800, height=600)
