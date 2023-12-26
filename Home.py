@@ -34,7 +34,7 @@ def run():
   col1, col2, col3 = st.columns([0.01, 0.98, 0.01])
 
   with col2:
-    iframe_src="https://calendar.google.com/calendar/embed?wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=ZjA2MTc0MmYzZTMxNjMxMzdjNjNmYzQ3NzUzMWI5MTBkNDFkZGYxMGNjMzFjYmY0MTNjY2VmZTNmNmI0ZGU1MUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23B39DDB"
+    iframe_src="https://calendar.google.com/calendar/embed?wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=ZjViOThjYWJjZDAzY2Y0ZmFkZjk4ZjM1NDNlYWNjNzQyNjVjNTFmYzZjMTRhNTkzNjExNjk4MGM4ODhiMWU0Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23D50000"
     # dim_output = dim(key='col2')
     # width = dim_output["width"]
     # components.iframe(iframe_src, width=width, height= width*0.7, scrolling=True)
